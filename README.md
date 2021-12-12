@@ -37,33 +37,26 @@ You have successfully forked a repository 🎉
 You should now be reading this, and the rest of the instructions, on your own fork!
 
 
-You will also need to [download GitKraken][2]
+## Git Clone with Visual Studio Code
 
-[<img src="img/gitkraken-keif-teal-sq.png" alt='GitKraken download logo' width="100" />][2]
+1. From your GitHub Repository, click the Code button and copy the HTTPS URL.
+2.  
+3. Open Visual Studio Code.
 
+4. Switch to the Source Control view (Ctrl+shift+G)
 
-## Git Clone with GitKraken
+5. Click Clone Repository
 
-1. Click on the "Code" button and copy the URL for the repository.
+6. Paste the URL from the first step and hit enter
+   
+7. Browse to the folder where you want the project set up (e.g. c:\users\myUserName\source) and select "Set Repository Location"
 
-![Git Clone in GitKraken](img/git-clone-screen-in-GitKraken.png)
-
-2. Open GitKraken and click the folder tab in the upper left
-
-3. Under the Clone tab, paste the URL you copied previously.
-
-4. Set the desired folder location for your local copy.  
-
-5. Click "Clone the repo!"
-
-![Open Now button in GitKraken](img/open-now-in-gitkraken.png)
-
-6. After cloning is successful, click the "Open Now" button that will appear in the top banner in GitKraken.
+The code files will be downloaded locally and opened in Visual Studio Code.
 
 
 **Congratulations!**  
 
-You have successfully cloned a repository with GitKraken 🎉
+You have successfully cloned a repository 🎉
 
 
 *Now, let's try it with the CLI...*
