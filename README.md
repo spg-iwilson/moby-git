@@ -1,8 +1,9 @@
-# GitKraken Clone Example Repo
+# GitKraken How to Commit Example Repo
 ## Featuring Moby Dick
 
-### Hi there and thanks for exploring Git and GitKraken 👋
+### Hi there and congrats on progressing with your exploration of Git and GitKraken 👋
 
+<<<<<<< HEAD
 **How to use this repository:**
 
 This repository contains multiple branches, each with a unique README with directions on how to perform a specific Git command with GitKraken and the CLI. 
@@ -22,29 +23,63 @@ See the 'Next Steps' section later in this document for specific directions on c
 ## Git Clone: 
 
 You can follow along with the [video and guide for "What is Git Clone?" on GitKraken.com][1].
+=======
+**Contents:**
+
+1. `main` - Provides an example of [cloning from GitHub using GitKraken and Git CLI][4]. 
+2. `git-commit`(this branch) - Directions for making a Git commit.
+3. `git-revert` - Directions for making a [Git revert][5]. 
+
+### Git Commit
+
+This branch provides an example of making a Git commit using GitKraken and the CLI. 
+
+You can follow along with the [tutorial for "how to Git Commit?" on GitKraken.com][1].
+>>>>>>> git-commit
 
 
 #### Set up:
 
-Before cloning the repo, first fork this GitHub repository.  Forking a repository lets you make a copy of a GitHub repository directly to your GitHub account. 
+If you have not already done so, you will also need to [download GitKraken.][2]
 
-To fork this repository, click the <img src='img/gh-fork-icon.png' alt="drawing" alt='GitHub Fork button' width="100"/> button in the upper right of this page. 
-
-**Congratulations!**  
-
-You have successfully forked a repository 🎉
-
-You should now be reading this, and the rest of the instructions, on your own fork!
+[<img src="img/gitkraken-keif-teal-sq.png" alt='GitKraken download logo' width="100" />][2]
 
 
+<<<<<<< HEAD
 ## Git Clone with Visual Studio Code
 
 1. From your GitHub Repository, click the Code button and copy the HTTPS URL.
 2.  
 3. Open Visual Studio Code.
+=======
+## Git Commit a file with GitKraken
+
+1. Open this local repository with GitKraken by clicking on the folder icon in the upper left, choosing 'Open a repo', and selecting the folder where you cloned this repository.
+
+![Opening a repository in GitKraken](img/gk-open-a-repo.png)
+
+2. In the commit panel on the right you can see if any files are changed locally. Click on the 'View all files' checkbox to show all the files in the directory. 
+
+![View all files in GitKraken](img/gk-view-all-files-option.png)
+
+3. Click on `full-text-moby-dick.txt`. This will open up the file using the editor inside GitKraken. If you prefer to use another editor to open and work with the file, right-click the file to open in an [external editor][3].
+
+4. Edit the file as much as you like and save your changes (ctl/cmd +s). Perhaps you want to change the author to be you. Or maybe use cmd/ctl-f to find and replace Ishmael with your own name throughout the text. 
+
+5. Now uncheck the 'View all files' box and you will see only the modified files in the view. Your changes are now being tracked by Git and GitKraken and you are now ready to stage them. 
+
+6. Click the top node on the graph labeled `//WIP` WIP stands for Work In Progress. The files you changed will now appear in the 'Unstaged Files' area of the commit panel.
+
+7. You can either click the "Stage all changes" button or hover over an individual file and click on the 'Stage File' button that appears. Alternatively, you can click on the file to be taken to the Diff view where you can compare and stage individual changed lines in your document. 
+
+8. Once you have staged the files, create your commit message in the 'Commit Message' 'Summary' and 'Description' fields. Summaries are limited to 72 characters but Descriptions can be as long as you like.
+
+9. Click the 'Commit Changes' button once you are happy with your commit message. 
+>>>>>>> git-commit
 
 4. Switch to the Source Control view (Ctrl+shift+G)
 
+<<<<<<< HEAD
 5. Click Clone Repository
 
 6. Paste the URL from the first step and hit enter
@@ -57,37 +92,43 @@ The code files will be downloaded locally and opened in Visual Studio Code.
 **Congratulations!**  
 
 You have successfully cloned a repository 🎉
+=======
+**Congratulations!** 
+
+You have successfully edited a file and made a commit with GitKraken 🎉
+>>>>>>> git-commit
 
 
 *Now, let's try it with the CLI...*
 
 
-## Git Clone with the Git CLI
+## Git Commit a file with the Git CLI
 
-1. Open a terminal and let's make sure Git is installed. Type:
-`git --version`and if it tells you the version number, then Git is ready to go. If it is not currently installed, [install it from git-scm.com](https://git-scm.com/downloads).
+1. Find and open the file `full-text-moby-dick.txt` with your favorite text editor.
 
-2. Change directory to the target location for your soon-to-be cloned repository. For example, if you wanted to clone it into a directory called `Sites` located under your home directory, you would enter 
-<br><br>`cd ~/Sites`
+2. Edit the file as much as you like and save your changes. 
 
-3. From your repository on GitHub, click on the "Code" button and copy the URL for the repository.
+3. Open your terminal or git-bash and navigate to the locally cloned repository containing `full-text-moby-dick.txt`.
 
-4. Enter the Git clone command followed by either the SSH or HTTPS URL for the remote repository. 
-<br><br>`git clone URL-copied-from-step-3`
+4. Type `git status` and hit enter to show the current state of the git repository. It should show that the file you have saved is `modified` under the 'Changes not staged for commit' part of the message.
+
+5. Type `git add full-text-moby-dick.txt` and hit enter to stage the file. By default, there is no feedback from Git if this command is successful. You can add the 'verbose' flag to the command to get a little more insight by running `git add full-text-moby-dick.txt -v` to get additional details.
+
+6. Again type `git status` and hit enter. You will now see the file listed under the 'Changes to be committed' part of the message.
+
+7. You are now ready to commit your changes and enter your commit message. To do this as a single step, type `git commit -m 'YOUR COMMIT MESSAGE GOES HERE'` and hit enter. 
+
+Note: If you run only `git commit`, Git will open the commit message to be edited by the default text editor in your terminal. This is typically a program called `vim`. While this a powerful editor, it is tricky to navigate for new users. If you find yourself in this unfamiliar editor, type `i` to go into 'insert mode', which will allow you to navigate and type as you like. Then hit the `esc` key and type `:wq` to tell the editor to write (save) your changes and quit the application. You can read more about `vim` at [https://www.vim.org/](https://www.vim.org/).
 
 
-**Congratulations!**  
+**Congratulations!** 
 
-
-You have successfully cloned a repository with the Git CLI.
-
-You can now change directory to the newly cloned repository, in this case, moby-dick, and start editing your files.  
-<br>`cd moby-dick`
-
+You have successfully committed a file with the Git CLI. 👏
 
 
 ## Next Steps
 
+<<<<<<< HEAD
 You are reading this on the `main` branch of this repository. 
 
 Keep going! To practice making commits you can switch to the `git-commit` branch. 
@@ -102,19 +143,36 @@ To checkout the branch locally using GitKraken, simply click on the `git-commit`
 ### Working with remotes in GitKraken
 
 You are now set up to work locally and push your changes to GitHub, or work on GitHub and pull those changes locally. 
+=======
+You are reading this on the `git-commit` branch of this repository. 
+>>>>>>> git-commit
 
-[Learn more about pulling and pushing over on GitKraken.com](
-https://support.gitkraken.com/working-with-repositories/pushing-and-pulling/)
+To continue on to practice reverting commits you can switch to the `git-revert` branch. 
+
+To switch branches on GitHub, click the `branches` option towards the top left of the code view and select the branch you want to navigate to. 
+
+To checkout the branch locally and pull from the online branch in the command line type `git checkout -b git-revert origin/git-revert`.
+
+To checkout the branch locally using GitKraken, simply click on the `git revert` branch in the Remote menu on the right hand side. 
 
 
+<<<<<<< HEAD
 When using GitKraken, you will see the "Remotes" pane on the left will populate with the name of Remote and its branches. Now you can make your changes and [push them up to your remote](https://gitkraken.com/learn/git/problems/pull-remote-git-branch) so team members can access your updates.
+=======
+--
 
-GitKraken also lets you manually add remotes by clicking the plus icon. Here you may paste either the SSH or HTTPS URLs for the repository to add the remote. This is great for adding forks of your project to see what changes team members might be working on. Feel free to add [the original repository](https://github.com/Axosoft/moby-dick) you forked from to see how we evolve this repo in the future. 
+[1]: https://www.gitkraken.com/learn/git/tutorials/how-to-git-commit?utm_source=learn%20gi[…]20tutorial%20link&utm_campaign=git%20commit%20practice%20repo
+>>>>>>> git-commit
 
+[2]: https://www.gitkraken.com/download?utm_source=learn%20git%20practice%20repo&utm_medium=README%20gk%20download%20link&utm_campaign=git%20commit%20practice%20repo
 
+[3]: https://support.gitkraken.com/start-here/preferences/#external-editor
 
-### About Moby-Dick
+[4]: https://www.gitkraken.com/learn/git/tutorials/what-is-git-clone?utm_source=learn%20gi[…]20tutorial%20link&utm_campaign=git%20commit%20practice%20repo
 
+[5]: https://www.gitkraken.com/learn/git/problems/revert-git-commit?utm_source=learn%20git%20practice%20repo&utm_medium=README%20revert%20git%20commit%20link&utm_campaign=revert%20git%20commit%20practice%20repo
+
+<<<<<<< HEAD
 
 #### *Moby-Dick, or, The Whale* 
 ##### by Herman Melville. 
@@ -138,3 +196,5 @@ Based on the [Project Gutenberg](http://www.gutenberg.org/ebooks/2701) [Plain Te
 [3]: https://www.gitkraken.com/learn/git/tutorials/how-to-git-commit?utm_source=learn%20gi%5B%E2%80%A6%5D20tutorial%20link&utm_campaign=git%20commit%20practice%20repo
 
 [4]: https://www.gitkraken.com/learn/git/problems/revert-git-commit?utm_source=learn%20git%20practice%20repo&utm_medium=README%20revert%20git%20commit%20link&utm_campaign=revert%20git%20commit%20practice%20repo
+=======
+>>>>>>> git-commit
