@@ -3,7 +3,6 @@
 
 ### Hi there and congrats on progressing with your exploration of Git and GitKraken 👋
 
-<<<<<<< HEAD
 **How to use this repository:**
 
 This repository contains multiple branches, each with a unique README with directions on how to perform a specific Git command with GitKraken and the CLI. 
@@ -23,19 +22,6 @@ See the 'Next Steps' section later in this document for specific directions on c
 ## Git Clone: 
 
 You can follow along with the [video and guide for "What is Git Clone?" on GitKraken.com][1].
-=======
-**Contents:**
-
-1. `main` - Provides an example of [cloning from GitHub using GitKraken and Git CLI][4]. 
-2. `git-commit`(this branch) - Directions for making a Git commit.
-3. `git-revert` - Directions for making a [Git revert][5]. 
-
-### Git Commit
-
-This branch provides an example of making a Git commit using GitKraken and the CLI. 
-
-You can follow along with the [tutorial for "how to Git Commit?" on GitKraken.com][1].
->>>>>>> git-commit
 
 
 #### Set up:
@@ -45,41 +31,14 @@ If you have not already done so, you will also need to [download GitKraken.][2]
 [<img src="img/gitkraken-keif-teal-sq.png" alt='GitKraken download logo' width="100" />][2]
 
 
-<<<<<<< HEAD
 ## Git Clone with Visual Studio Code
 
 1. From your GitHub Repository, click the Code button and copy the HTTPS URL.
 2.  
 3. Open Visual Studio Code.
-=======
-## Git Commit a file with GitKraken
-
-1. Open this local repository with GitKraken by clicking on the folder icon in the upper left, choosing 'Open a repo', and selecting the folder where you cloned this repository.
-
-![Opening a repository in GitKraken](img/gk-open-a-repo.png)
-
-2. In the commit panel on the right you can see if any files are changed locally. Click on the 'View all files' checkbox to show all the files in the directory. 
-
-![View all files in GitKraken](img/gk-view-all-files-option.png)
-
-3. Click on `full-text-moby-dick.txt`. This will open up the file using the editor inside GitKraken. If you prefer to use another editor to open and work with the file, right-click the file to open in an [external editor][3].
-
-4. Edit the file as much as you like and save your changes (ctl/cmd +s). Perhaps you want to change the author to be you. Or maybe use cmd/ctl-f to find and replace Ishmael with your own name throughout the text. 
-
-5. Now uncheck the 'View all files' box and you will see only the modified files in the view. Your changes are now being tracked by Git and GitKraken and you are now ready to stage them. 
-
-6. Click the top node on the graph labeled `//WIP` WIP stands for Work In Progress. The files you changed will now appear in the 'Unstaged Files' area of the commit panel.
-
-7. You can either click the "Stage all changes" button or hover over an individual file and click on the 'Stage File' button that appears. Alternatively, you can click on the file to be taken to the Diff view where you can compare and stage individual changed lines in your document. 
-
-8. Once you have staged the files, create your commit message in the 'Commit Message' 'Summary' and 'Description' fields. Summaries are limited to 72 characters but Descriptions can be as long as you like.
-
-9. Click the 'Commit Changes' button once you are happy with your commit message. 
->>>>>>> git-commit
 
 4. Switch to the Source Control view (Ctrl+shift+G)
 
-<<<<<<< HEAD
 5. Click Clone Repository
 
 6. Paste the URL from the first step and hit enter
@@ -92,11 +51,6 @@ The code files will be downloaded locally and opened in Visual Studio Code.
 **Congratulations!**  
 
 You have successfully cloned a repository 🎉
-=======
-**Congratulations!** 
-
-You have successfully edited a file and made a commit with GitKraken 🎉
->>>>>>> git-commit
 
 
 *Now, let's try it with the CLI...*
@@ -128,7 +82,6 @@ You have successfully committed a file with the Git CLI. 👏
 
 ## Next Steps
 
-<<<<<<< HEAD
 You are reading this on the `main` branch of this repository. 
 
 Keep going! To practice making commits you can switch to the `git-commit` branch. 
@@ -143,9 +96,7 @@ To checkout the branch locally using GitKraken, simply click on the `git-commit`
 ### Working with remotes in GitKraken
 
 You are now set up to work locally and push your changes to GitHub, or work on GitHub and pull those changes locally. 
-=======
 You are reading this on the `git-commit` branch of this repository. 
->>>>>>> git-commit
 
 To continue on to practice reverting commits you can switch to the `git-revert` branch. 
 
@@ -156,13 +107,7 @@ To checkout the branch locally and pull from the online branch in the command li
 To checkout the branch locally using GitKraken, simply click on the `git revert` branch in the Remote menu on the right hand side. 
 
 
-<<<<<<< HEAD
 When using GitKraken, you will see the "Remotes" pane on the left will populate with the name of Remote and its branches. Now you can make your changes and [push them up to your remote](https://gitkraken.com/learn/git/problems/pull-remote-git-branch) so team members can access your updates.
-=======
---
-
-[1]: https://www.gitkraken.com/learn/git/tutorials/how-to-git-commit?utm_source=learn%20gi[…]20tutorial%20link&utm_campaign=git%20commit%20practice%20repo
->>>>>>> git-commit
 
 [2]: https://www.gitkraken.com/download?utm_source=learn%20git%20practice%20repo&utm_medium=README%20gk%20download%20link&utm_campaign=git%20commit%20practice%20repo
 
@@ -172,7 +117,6 @@ When using GitKraken, you will see the "Remotes" pane on the left will populate 
 
 [5]: https://www.gitkraken.com/learn/git/problems/revert-git-commit?utm_source=learn%20git%20practice%20repo&utm_medium=README%20revert%20git%20commit%20link&utm_campaign=revert%20git%20commit%20practice%20repo
 
-<<<<<<< HEAD
 
 #### *Moby-Dick, or, The Whale* 
 ##### by Herman Melville. 
@@ -196,5 +140,3 @@ Based on the [Project Gutenberg](http://www.gutenberg.org/ebooks/2701) [Plain Te
 [3]: https://www.gitkraken.com/learn/git/tutorials/how-to-git-commit?utm_source=learn%20gi%5B%E2%80%A6%5D20tutorial%20link&utm_campaign=git%20commit%20practice%20repo
 
 [4]: https://www.gitkraken.com/learn/git/problems/revert-git-commit?utm_source=learn%20git%20practice%20repo&utm_medium=README%20revert%20git%20commit%20link&utm_campaign=revert%20git%20commit%20practice%20repo
-=======
->>>>>>> git-commit
