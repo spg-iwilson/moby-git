@@ -5,6 +5,8 @@
 
 **How to use this repository:**
 
+(Just making a change to determine how checkouts work between remote and local. This should change the remote commit id, but not the local reference to origin\main on my local computer)
+
 This repository contains multiple branches, each with a unique README with directions on how to perform a specific Git command with GitKraken and the CLI. 
 
 If you are new to Git, here is an important note: each branch in this practice repo will contain unique text focused on the related Git concept. The text will change depending on which branch you have checked out.    
